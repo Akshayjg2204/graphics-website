@@ -4,6 +4,48 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  /* Light mode (default) */
+  --background: #f8f7f4;
+  --foreground: #1a1a1f;
+  --card: #ffffff;
+  --card-foreground: #1a1a1f;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1f;
+  --primary: #d9216e;
+  --primary-foreground: #ffffff;
+  --secondary: #f0ede8;
+  --secondary-foreground: #1a1a1f;
+  --muted: #e8e4df;
+  --muted-foreground: #6b6b78;
+  --accent: #e8931a;
+  --accent-foreground: #ffffff;
+  --destructive: #c8352a;
+  --destructive-foreground: #ffffff;
+  --border: #e8e4df;
+  --input: #f0ede8;
+  --ring: #d9216e;
+  --chart-1: #d9216e;
+  --chart-2: #e8931a;
+  --chart-3: #0891b2;
+  --chart-4: #d9216e;
+  --chart-5: #e8931a;
+  --radius: 0.75rem;
+  --sidebar: #f8f7f4;
+  --sidebar-foreground: #1a1a1f;
+  --sidebar-primary: #d9216e;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f0ede8;
+  --sidebar-accent-foreground: #1a1a1f;
+  --sidebar-border: #e8e4df;
+  --sidebar-ring: #d9216e;
+  --neon-cyan: #0891b2;
+  --neon-pink: #d9216e;
+  --neon-orange: #e8931a;
+  --neon-gold: #d4a816;
+}
+
+.dark {
+  /* Dark mode */
   --background: #0a0a0f;
   --foreground: #f0ece4;
   --card: #12121a;
@@ -28,7 +70,6 @@
   --chart-3: #00d2ff;
   --chart-4: #e84393;
   --chart-5: #f39c12;
-  --radius: 0.75rem;
   --sidebar: #12121a;
   --sidebar-foreground: #f0ece4;
   --sidebar-primary: #e84393;
@@ -171,4 +212,13 @@ html {
   background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.08) 50%, transparent 100%);
   background-size: 200% 100%;
   animation: shimmer 3s infinite;
+}
+
+.dark .animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.08) 50%, transparent 100%);
+}
+
+/* Light mode shimmer */
+:root .animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.05) 50%, transparent 100%);
 }
