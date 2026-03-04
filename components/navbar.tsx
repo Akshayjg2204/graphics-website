@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Menu, X, Phone, Music } from "lucide-react"
 import Image from "next/image"
+import ThemeToggle from "./theme-toggle"
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -26,7 +27,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#0a0a0f]/90 backdrop-blur-xl border-b border-border shadow-lg shadow-[#e84393]/5"
+          ? "bg-background/90 dark:bg-[#0a0a0f]/90 backdrop-blur-xl border-b border-border shadow-lg shadow-primary/5"
           : "bg-transparent"
       }`}
     >
@@ -34,7 +35,7 @@ export default function Navbar() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="relative h-12 w-12 overflow-hidden rounded-full ring-2 ring-[#e84393] transition-all duration-300 group-hover:ring-[#f39c12] group-hover:scale-105">
+            <div className="relative h-12 w-12 overflow-hidden rounded-full ring-2 ring-primary transition-all duration-300 group-hover:ring-accent group-hover:scale-105">
               <Image
                 src="/images/profile.jpg"
                 alt="RJ Graphics Logo"
@@ -54,19 +55,20 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm text-muted-foreground transition-colors duration-300 hover:text-[#e84393] relative group"
+                className="text-sm text-muted-foreground transition-colors duration-300 hover:text-primary relative group"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-[#e84393] transition-all duration-300 group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-primary transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </div>
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-4">
+            <ThemeToggle />
             <a
               href="tel:+918433627621"
-              className="flex items-center gap-2 rounded-full bg-[#e84393] px-5 py-2.5 text-sm font-semibold text-[#ffffff] transition-all duration-300 hover:bg-[#f39c12] hover:text-[#0a0a0f] hover:scale-105 hover:shadow-lg hover:shadow-[#e84393]/25"
+              className="flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:bg-accent hover:scale-105 hover:shadow-lg hover:shadow-primary/25"
             >
               <Phone className="h-4 w-4" />
               Call Now
@@ -90,24 +92,27 @@ export default function Navbar() {
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="bg-[#0a0a0f]/95 backdrop-blur-xl border-t border-border px-4 py-6 space-y-4">
+        <div className="bg-background/95 dark:bg-[#0a0a0f]/95 backdrop-blur-xl border-t border-border px-4 py-6 space-y-4">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="block text-foreground hover:text-[#e84393] transition-colors duration-300 py-2"
+              className="block text-foreground hover:text-primary transition-colors duration-300 py-2"
             >
               {link.label}
             </a>
           ))}
-          <a
-            href="tel:+918433627621"
-            className="flex items-center gap-2 rounded-full bg-[#e84393] px-5 py-2.5 text-sm font-semibold text-[#ffffff] w-fit"
-          >
-            <Phone className="h-4 w-4" />
-            Call Now
-          </a>
+          <div className="flex items-center justify-between pt-2">
+            <a
+              href="tel:+918433627621"
+              className="flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground"
+            >
+              <Phone className="h-4 w-4" />
+              Call Now
+            </a>
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </nav>

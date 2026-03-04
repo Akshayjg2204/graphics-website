@@ -28,26 +28,26 @@ export default function Hero() {
       id="home"
       ref={sectionRef}
       onMouseMove={handleMouseMove}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background"
     >
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-[#0a0a0f]">
+      <div className="absolute inset-0">
         <div
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#e84393]/10 rounded-full blur-[128px] transition-transform duration-700"
+          className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 dark:bg-[#e84393]/10 rounded-full blur-[128px] transition-transform duration-700"
           style={{ transform: `translate(${mousePos.x}px, ${mousePos.y}px)` }}
         />
         <div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#f39c12]/10 rounded-full blur-[128px] transition-transform duration-700"
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 dark:bg-[#f39c12]/10 rounded-full blur-[128px] transition-transform duration-700"
           style={{ transform: `translate(${-mousePos.x}px, ${-mousePos.y}px)` }}
         />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#00d2ff]/5 rounded-full blur-[200px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-400/3 dark:bg-[#00d2ff]/5 rounded-full blur-[200px]" />
       </div>
 
       {/* Grid Pattern Overlay */}
       <div
-        className="absolute inset-0 opacity-[0.03]"
+        className="absolute inset-0 opacity-[0.02] dark:opacity-[0.03]"
         style={{
-          backgroundImage: `linear-gradient(#e84393 1px, transparent 1px), linear-gradient(90deg, #e84393 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(var(--neon-pink) 1px, transparent 1px), linear-gradient(90deg, var(--neon-pink) 1px, transparent 1px)`,
           backgroundSize: "60px 60px",
         }}
       />
@@ -58,7 +58,7 @@ export default function Hero() {
           <div className="flex-1 text-center lg:text-left">
             {/* Badge */}
             <div
-              className={`inline-flex items-center gap-2 rounded-full border border-[#e84393]/30 bg-[#e84393]/10 px-4 py-2 text-sm text-[#e84393] mb-8 transition-all duration-700 ${
+              className={`inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm text-primary mb-8 transition-all duration-700 ${
                 loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
@@ -107,15 +107,15 @@ export default function Hero() {
             >
               <a
                 href="#gallery"
-                className="group relative inline-flex items-center gap-2 rounded-full bg-[#e84393] px-8 py-4 text-base font-semibold text-[#ffffff] transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#e84393]/25"
+                className="group relative inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-semibold text-primary-foreground transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/25"
               >
                 <Music className="h-5 w-5" />
                 View Our Work
-                <span className="absolute inset-0 rounded-full bg-[#ffffff]/0 transition-all duration-300 group-hover:bg-[#ffffff]/10" />
+                <span className="absolute inset-0 rounded-full bg-white/0 transition-all duration-300 group-hover:bg-white/10" />
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-[#f39c12]/40 px-8 py-4 text-base font-semibold text-[#f39c12] transition-all duration-300 hover:bg-[#f39c12]/10 hover:border-[#f39c12] hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-accent/40 px-8 py-4 text-base font-semibold text-accent transition-all duration-300 hover:bg-accent/10 hover:border-accent hover:scale-105"
               >
                 Get a Quote
               </a>
@@ -147,15 +147,15 @@ export default function Hero() {
             }`}
           >
             {/* Glowing ring behind profile */}
-            <div className="absolute inset-0 m-auto w-72 h-72 sm:w-80 sm:h-80 rounded-full bg-gradient-to-tr from-[#e84393] via-[#f39c12] to-[#ffd700] opacity-20 blur-2xl animate-pulse" />
+            <div className="absolute inset-0 m-auto w-72 h-72 sm:w-80 sm:h-80 rounded-full bg-gradient-to-tr from-primary via-accent to-yellow-500 opacity-20 blur-2xl animate-pulse" />
             
             <div className="relative">
               {/* Rotating outer ring */}
-              <div className="absolute -inset-3 rounded-full bg-gradient-to-tr from-[#e84393] via-[#f39c12] to-[#ffd700] animate-[spin_8s_linear_infinite] opacity-60" />
-              <div className="absolute -inset-2 rounded-full bg-[#0a0a0f]" />
+              <div className="absolute -inset-3 rounded-full bg-gradient-to-tr from-primary via-accent to-yellow-500 animate-[spin_8s_linear_infinite] opacity-60" />
+              <div className="absolute -inset-2 rounded-full bg-background" />
               
               {/* Profile Image */}
-              <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden ring-4 ring-[#e84393]/50 animate-float">
+              <div className="relative w-72 h-72 sm:w-80 sm:h-80 rounded-full overflow-hidden ring-4 ring-primary/50 animate-float">
                 <Image
                   src="/images/profile.jpg"
                   alt="RJ Graphics - Raj Navnath Mhatre"
@@ -167,16 +167,16 @@ export default function Hero() {
             </div>
 
             {/* Floating badges */}
-            <div className="absolute -top-2 -right-2 sm:top-4 sm:-right-4 bg-[#12121a] border border-[#e84393]/30 rounded-xl px-3 py-2 animate-float shadow-lg shadow-[#e84393]/10">
+            <div className="absolute -top-2 -right-2 sm:top-4 sm:-right-4 bg-card border border-primary/30 rounded-xl px-3 py-2 animate-float shadow-lg shadow-primary/10">
               <div className="flex items-center gap-2">
-                <Music className="h-4 w-4 text-[#e84393]" />
+                <Music className="h-4 w-4 text-primary" />
                 <span className="text-xs font-medium text-foreground">Music & Instruments</span>
               </div>
             </div>
 
-            <div className="absolute -bottom-2 -left-2 sm:bottom-4 sm:-left-4 bg-[#12121a] border border-[#f39c12]/30 rounded-xl px-3 py-2 animate-float shadow-lg shadow-[#f39c12]/10" style={{ animationDelay: "1s" }}>
+            <div className="absolute -bottom-2 -left-2 sm:bottom-4 sm:-left-4 bg-card border border-accent/30 rounded-xl px-3 py-2 animate-float shadow-lg shadow-accent/10" style={{ animationDelay: "1s" }}>
               <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-[#f39c12]" />
+                <Sparkles className="h-4 w-4 text-accent" />
                 <span className="text-xs font-medium text-foreground">Custom Designs</span>
               </div>
             </div>
