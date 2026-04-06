@@ -1,86 +1,81 @@
-Ah, understood! That makes perfect sense. It is a fantastic portfolio piece to demonstrate your ability to build a fully-featured, professional business website.
+# 🎨 RJ Graphics - Demo Business Website
 
-I have adjusted the README below to remove the client-specific references and reframe it perfectly as a showcase project for your portfolio.
+![RJ Graphics Preview](https://rjgraphics.netlify.app/images/profile.jpg)
 
-🎨 RJ Graphics - Demo Business Website
-A modern, responsive demo website created to showcase a complete digital storefront for a custom instrument graphics business.
+> A modern, responsive demo website created to showcase a complete digital storefront for a custom instrument graphics business. 
 
-Live Demo | Report Bug | Request Feature
+**[Live Demo](https://rjgraphics.netlify.app/) | [Report Bug](https://github.com/Akshayjg2204/graphics-website/issues) | [Request Feature](https://github.com/Akshayjg2204/graphics-website/issues)**
 
-✨ Overview
-This project is a high-performance portfolio piece designed to demonstrate modern web development practices. It simulates a functional business website, providing a clear user journey from viewing services to exploring a dynamic gallery and initiating contact.
+## ✨ Overview
 
-Key Features
-Modern UI/UX: Built with a clean, component-driven design system.
+This project is a high-performance portfolio piece designed to demonstrate modern web development practices. It simulates a functional business website, providing a clear user journey from viewing services to exploring a dynamic gallery and initiating contact. 
 
-Services Grid & Gallery: Showcases simulated business offerings and a dynamic portfolio of past work.
+### Key Features
+* **Modern UI/UX:** Built with a clean, component-driven design system.
+* **Services Grid & Gallery:** Showcases simulated business offerings and a dynamic portfolio of past work.
+* **Direct Communication Integration:** Includes functional UI elements for WhatsApp chat routing and direct-dial phone links.
+* **Dark/Light Mode:** Includes a seamless theme toggler for user preference.
+* **Fully Responsive:** Optimized UI for seamless browsing across desktop, tablet, and mobile devices.
 
-Direct Communication Integration: Includes functional UI elements for WhatsApp chat routing and direct-dial phone links.
+## 🛠️ Tech Stack
 
-Dark/Light Mode: Includes a seamless theme toggler for user preference.
+* **Framework:** [Next.js](https://nextjs.org/) (App Router)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
+* **Package Manager:** pnpm
+* **Hosting/Deployment:** Netlify / Vercel
 
-Fully Responsive: Optimized UI for seamless browsing across desktop, tablet, and mobile devices.
+## 🚀 Getting Started
 
-🛠️ Tech Stack
-Framework: Next.js (App Router)
-
-Language: TypeScript
-
-Styling: Tailwind CSS
-
-UI Components: shadcn/ui
-
-Package Manager: pnpm
-
-Hosting/Deployment: Netlify / Vercel
-
-🚀 Getting Started
 To get a local copy of this project up and running, follow these steps.
 
-Prerequisites
+### Prerequisites
+
 Make sure you have Node.js installed, along with pnpm.
 
-Bash
-npm install -g pnpm
-Installation
-Clone the repository:
+    npm install -g pnpm
 
-Bash
-git clone https://github.com/Akshayjg2204/graphics-website.git
-Navigate to the project directory:
+### Installation
 
-Bash
-cd graphics-website
-Install dependencies:
+1. **Clone the repository:**
 
-Bash
-pnpm install
-Start the development server:
+    git clone [https://github.com/Akshayjg2204/graphics-website.git](https://github.com/Akshayjg2204/graphics-website.git)
 
-Bash
-pnpm dev
+2. **Navigate to the project directory:**
+
+    cd graphics-website
+
+3. **Install dependencies:**
+
+    pnpm install
+
+4. **Start the development server:**
+
+    pnpm dev
+
 Open http://localhost:3000 with your browser to see the result.
 
-📂 Project Structure
-Plaintext
-├── app/                  # Next.js App Router (pages & layouts)
-│   ├── globals.css       # Global styling
-│   ├── layout.tsx        # Root layout
-│   └── page.tsx          # Main landing page
-├── components/           # React components
-│   ├── ui/               # shadcn/ui component library
-│   ├── hero.tsx          # Hero section component
-│   ├── gallery.tsx       # Portfolio gallery component
-│   ├── services.tsx      # Services overview component
-│   ├── contact.tsx       # Contact form & info component
-│   └── ...               # Other modular UI blocks
-├── hooks/                # Custom React hooks (e.g., use-mobile)
-├── lib/                  # Utility functions (e.g., utils.ts)
-├── public/               # Static assets (images, icons)
-│   └── images/           # Drum head and profile graphics
-├── styles/               # Additional global styles
-├── .env.development.local # Environment variables
-├── components.json       # shadcn/ui configuration
-├── next.config.mjs       # Next.js configuration
-├── package.json          # Project metadata and dependencies
-└── tsconfig.json         # TypeScript configuration
+## 📂 Project Structure
+
+    ├── app/                  # Next.js App Router (pages & layouts)
+    │   ├── globals.css       # Global styling
+    │   ├── layout.tsx        # Root layout
+    │   └── page.tsx          # Main landing page
+    ├── components/           # React components
+    │   ├── ui/               # shadcn/ui component library
+    │   ├── hero.tsx          # Hero section component
+    │   ├── gallery.tsx       # Portfolio gallery component
+    │   ├── services.tsx      # Services overview component
+    │   ├── contact.tsx       # Contact form & info component
+    │   └── ...               # Other modular UI blocks
+    ├── hooks/                # Custom React hooks (e.g., use-mobile)
+    ├── lib/                  # Utility functions (e.g., utils.ts)
+    ├── public/               # Static assets (images, icons)
+    │   └── images/           # Drum head and profile graphics
+    ├── styles/               # Additional global styles
+    ├── .env.development.local # Environment variables
+    ├── components.json       # shadcn/ui configuration
+    ├── next.config.mjs       # Next.js configuration
+    ├── package.json          # Project metadata and dependencies
+    └── tsconfig.json         # TypeScript configuration
