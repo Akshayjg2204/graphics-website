@@ -1,8 +1,8 @@
-# 🎨 RJ Graphics — Custom Instrument Graphics & Portfolio Platform
+# 🎨 RJ Graphics — Custom Instrument Graphics & Portfolio Platform (Demo)
 
 <div align="center">
   <p align="center">
-    <b>A modern digital storefront and portfolio showcase for custom musical instrument graphics.</b><br>
+    <b>A modern digital storefront and portfolio demo showcase for custom musical instrument graphics.</b><br>
     Engineered with Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion, and Radix UI.
   </p>
 
