@@ -1,7 +1,30 @@
 {
-  "name": "my-project",
-  "version": "0.1.0",
-  "private": true,
+  "name": "graphics-website",
+  "version": "1.0.0",
+  "private": false,
+  "description": "RJ Graphics — Custom Musical Instrument Graphics & Digital Portfolio Showcase built with Next.js 16, React 19, TypeScript, Tailwind CSS v4, and Radix UI.",
+  "author": {
+    "name": "Akshay Gaikwad",
+    "url": "https://stream-line.dev/"
+  },
+  "homepage": "https://rjgraphics.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Akshayjg2204/graphics-website.git"
+  },
+  "keywords": [
+    "rj-graphics",
+    "graphics-design",
+    "instrument-graphics",
+    "banjo-art",
+    "digital-portfolio",
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "radix-ui",
+    "shadcn-ui"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +33,6 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
-    "@vercel/analytics": "1.6.1",
     "@radix-ui/react-accordion": "1.2.12",
     "@radix-ui/react-alert-dialog": "1.1.15",
     "@radix-ui/react-aspect-ratio": "1.1.8",
@@ -38,12 +60,14 @@
     "@radix-ui/react-toggle": "1.1.10",
     "@radix-ui/react-toggle-group": "1.1.11",
     "@radix-ui/react-tooltip": "1.2.8",
+    "@vercel/analytics": "1.6.1",
     "autoprefixer": "^10.4.20",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.1.1",
     "date-fns": "4.1.0",
     "embla-carousel-react": "8.6.0",
+    "framer-motion": "^11.18.0",
     "input-otp": "1.4.2",
     "lucide-react": "^0.564.0",
     "next": "16.1.6",

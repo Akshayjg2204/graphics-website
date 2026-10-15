@@ -1,81 +1,102 @@
-# 🎨 RJ Graphics - Demo Business Website
+# 🎨 RJ Graphics — Custom Instrument Graphics & Portfolio Platform
 
-![RJ Graphics Preview](https://rjgraphics.netlify.app/images/profile.jpg)
+<div align="center">
+  <p align="center">
+    <b>A modern digital storefront and portfolio showcase for custom musical instrument graphics.</b><br>
+    Engineered with Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion, and Radix UI.
+  </p>
 
-> A modern, responsive demo website created to showcase a complete digital storefront for a custom instrument graphics business. 
+  <p align="center">
+    <a href="https://rjgraphics.netlify.app/" target="_blank"><img src="https://img.shields.io/badge/Live_Demo-rjgraphics.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo" /></a>
+    &nbsp;
+    <a href="https://github.com/Akshayjg2204/graphics-website"><img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repository" /></a>
+  </p>
 
-**[Live Demo](https://rjgraphics.netlify.app/) | [Report Bug](https://github.com/Akshayjg2204/graphics-website/issues) | [Request Feature](https://github.com/Akshayjg2204/graphics-website/issues)**
+  <p align="center">
+    <img src="https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+    <img src="https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black" />
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS_v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
+    <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white" />
+    <img src="https://img.shields.io/badge/Radix_UI-161618?style=flat-square&logo=radixui&logoColor=white" />
+  </p>
+</div>
 
-## ✨ Overview
+---
 
-This project is a high-performance portfolio piece designed to demonstrate modern web development practices. It simulates a functional business website, providing a clear user journey from viewing services to exploring a dynamic gallery and initiating contact. 
+## 📸 Platform Showcase
 
-### Key Features
-* **Modern UI/UX:** Built with a clean, component-driven design system.
-* **Services Grid & Gallery:** Showcases simulated business offerings and a dynamic portfolio of past work.
-* **Direct Communication Integration:** Includes functional UI elements for WhatsApp chat routing and direct-dial phone links.
-* **Dark/Light Mode:** Includes a seamless theme toggler for user preference.
-* **Fully Responsive:** Optimized UI for seamless browsing across desktop, tablet, and mobile devices.
+<div align="center">
+  <a href="https://rjgraphics.netlify.app/">
+    <img src="https://rjgraphics.netlify.app/images/profile.jpg" alt="RJ Graphics Digital Portfolio Showcase" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.35);" />
+  </a>
+  <p align="center">
+    <sub><b>✨ Interactive showcase for custom Banjo instrument graphics, drum head designs, and artistic finishes.</b></sub><br>
+    <b><a href="https://rjgraphics.netlify.app/">🚀 Launch Live Web App</a></b>
+  </p>
+</div>
+
+---
+
+## ✨ Design & Engineering Highlights
+
+- **🎨 Dynamic Portfolio Gallery:** Interactive visual gallery highlighting custom artistic artwork applied to Banjo instruments, drum skins, and acoustic accessories.
+- **⚡ Next.js 16 & React 19 Architecture:** High-speed static generation paired with modern React concurrent rendering for instant client routing.
+- **💬 Direct Client Communication Channels:** Seamless deep-linking into WhatsApp messaging and telephone calling with pre-filled consultation templates.
+- **🌓 Adaptive Theme Engine:** Integrated `next-themes` provider providing zero-flicker Light and Dark mode transitions with system sync.
+- **📱 True Cross-Device Responsiveness:** Engineered from mobile viewports up to ultrawide desktop monitors with fluid typography (`Bebas Neue` & `Inter`).
+
+---
 
 ## 🛠️ Tech Stack
 
-* **Framework:** [Next.js](https://nextjs.org/) (App Router)
-* **Language:** TypeScript
-* **Styling:** Tailwind CSS
-* **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
-* **Package Manager:** pnpm
-* **Hosting/Deployment:** Netlify / Vercel
+| Technology | Purpose |
+| :--- | :--- |
+| **Next.js 16** | App Router, static site generation, and optimized image pipeline |
+| **React 19** | Modern concurrent UI architecture and component state management |
+| **TypeScript** | Strict compile-time safety and type contracts across all components |
+| **Tailwind CSS v4** | Hardware-accelerated styling with custom CSS design tokens |
+| **Framer Motion** | Dynamic scroll animations, gallery transitions, and hover choreography |
+| **Radix UI / shadcn** | Accessible headless UI primitives (Dialogs, Tabs, Accordions) |
+| **Embla Carousel** | Smooth, touch-friendly product and gallery carousel transitions |
+| **Lucide React** | Consistent vector iconography |
 
-## 🚀 Getting Started
+---
 
-To get a local copy of this project up and running, follow these steps.
+## 🚀 Getting Started Locally
 
 ### Prerequisites
+- Node.js 18+ or 20+
+- pnpm or npm
 
-Make sure you have Node.js installed, along with pnpm.
+```bash
+# 1. Clone the repository
+git clone https://github.com/Akshayjg2204/graphics-website.git
+cd graphics-website
 
-    npm install -g pnpm
+# 2. Install dependencies
+pnpm install
+# or: npm install
 
-### Installation
+# 3. Start development server
+pnpm dev
+# or: npm run dev
+```
 
-1. **Clone the repository:**
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-    git clone [https://github.com/Akshayjg2204/graphics-website.git](https://github.com/Akshayjg2204/graphics-website.git)
+### Building for Production
+```bash
+pnpm build
+# or: npm run build
+```
 
-2. **Navigate to the project directory:**
+---
 
-    cd graphics-website
+## 👨‍💻 Author
 
-3. **Install dependencies:**
-
-    pnpm install
-
-4. **Start the development server:**
-
-    pnpm dev
-
-Open http://localhost:3000 with your browser to see the result.
-
-## 📂 Project Structure
-
-    ├── app/                  # Next.js App Router (pages & layouts)
-    │   ├── globals.css       # Global styling
-    │   ├── layout.tsx        # Root layout
-    │   └── page.tsx          # Main landing page
-    ├── components/           # React components
-    │   ├── ui/               # shadcn/ui component library
-    │   ├── hero.tsx          # Hero section component
-    │   ├── gallery.tsx       # Portfolio gallery component
-    │   ├── services.tsx      # Services overview component
-    │   ├── contact.tsx       # Contact form & info component
-    │   └── ...               # Other modular UI blocks
-    ├── hooks/                # Custom React hooks (e.g., use-mobile)
-    ├── lib/                  # Utility functions (e.g., utils.ts)
-    ├── public/               # Static assets (images, icons)
-    │   └── images/           # Drum head and profile graphics
-    ├── styles/               # Additional global styles
-    ├── .env.development.local # Environment variables
-    ├── components.json       # shadcn/ui configuration
-    ├── next.config.mjs       # Next.js configuration
-    ├── package.json          # Project metadata and dependencies
-    └── tsconfig.json         # TypeScript configuration
+**Akshay Gaikwad**  
+Founder & Lead Engineer at [Streamline.dev](https://github.com/Streamline-dev0)  
+- 🌐 Portfolio: [stream-line.dev](https://stream-line.dev/)  
+- 💼 LinkedIn: [linkedin.com/in/akshayjgaikwad](https://www.linkedin.com/in/akshayjgaikwad/)  
+- 🐙 GitHub: [@Akshayjg2204](https://github.com/Akshayjg2204)  

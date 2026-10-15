@@ -13,9 +13,44 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'RJ Graphics Dombivli | Custom Banjo Instrument Graphics',
-  description: 'Premium custom graphics and designs for all Banjo instruments. Drum heads, custom artwork, and professional instrument graphics by Raj Navnath Mhatre. Based in Dombivli, Thane, Mumbai.',
-  keywords: ['banjo graphics', 'drum head design', 'instrument graphics', 'custom banjo art', 'Dombivli', 'Mumbai'],
+  title: 'RJ Graphics Dombivli | Custom Banjo Instrument Graphics & Portfolio',
+  description:
+    'Premium custom graphics, drum head designs, and artistic finishes for musical instruments by Raj Navnath Mhatre. Based in Dombivli, Thane, Mumbai.',
+  authors: [{ name: 'Akshay Gaikwad', url: 'https://stream-line.dev/' }],
+  keywords: [
+    'RJ Graphics',
+    'banjo graphics',
+    'drum head design',
+    'instrument graphics',
+    'custom banjo art',
+    'Dombivli',
+    'Mumbai',
+    'Next.js',
+    'Tailwind CSS',
+  ],
+  openGraph: {
+    title: 'RJ Graphics Dombivli | Custom Banjo Instrument Graphics & Portfolio',
+    description:
+      'Premium custom graphics, drum head designs, and artistic finishes for musical instruments. Based in Dombivli, Thane, Mumbai.',
+    url: 'https://rjgraphics.netlify.app/',
+    siteName: 'RJ Graphics',
+    images: [
+      {
+        url: 'https://rjgraphics.netlify.app/images/profile.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'RJ Graphics Portfolio Showcase',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'RJ Graphics Dombivli | Custom Banjo Instrument Graphics & Portfolio',
+    description:
+      'Premium custom graphics and artistic finishes for musical instruments.',
+    images: ['https://rjgraphics.netlify.app/images/profile.jpg'],
+  },
   icons: {
     icon: [
       {
